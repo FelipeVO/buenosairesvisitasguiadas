@@ -1,0 +1,75 @@
+/* Google Fonts */
+@import url('');
+
+/* Variables */
+:root {
+    /* Colores */
+    --color1: hsl(44, 53%, 62%);
+    --color2: ;
+    --color3: ;
+    --titulo1: ;
+    --background1: ;
+
+    /* Fonts */
+    --font-titulo: 'Tilt Neon', cursive;
+    --font-body: 'Poppins', sans-serif;
+    --body-size1: ;
+
+}
+
+/* Base */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-body);
+    font-size: var(--body-size1);
+    background-color: var(--background1);
+    color: var(--titulo1);
+}
+
+h1,h2,h3{
+    font-family: var(--font-titulo);
+    color: var(--titulo1);
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reusable */
+
+
+
+/* Navbar */
+
+header{
+    background-color: aqua;
+}
+.navbar{
+    display: flex;
+    width: 10vw;
+}
+
+.nav_menu{
+    display: flex;
+
+}
