@@ -1,18 +1,18 @@
 /* Google Fonts */
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Raleway:wght@500&display=swap');
 
 /* Variables */
 :root {
     /* Colores */
-    --color1: hsl(44, 53%, 62%);
+    --color1: ;
     --color2: ;
     --color3: ;
     --titulo1: ;
-    --background1: ;
+    --background1: hsl(29, 37%, 49%);
 
     /* Fonts */
-    --font-titulo: 'Tilt Neon', cursive;
-    --font-body: 'Poppins', sans-serif;
+    --font-titulo: 'Raleway', sans-serif;
+    --font-body: 'Golos Text', sans-serif;
     --body-size1: ;
 
 }
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
+    font-family: var(--font-body);
 }
 
 html{
@@ -62,14 +62,48 @@ img {
 /* Navbar */
 
 header{
-    background-color: aqua;
+    width: 100vw;
 }
 .navbar{
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
     display: flex;
-    width: 10vw;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.nav_logo{
+    width: 20%;
+    text-align: center;
+    justify-content: center;
 }
 
 .nav_menu{
     display: flex;
+    width: 80%;
+    justify-content: end;
+}
 
+.nav_menu li{
+    padding-right: 50px;
+}
+
+.nav_menu li a{
+    color: black;
+    display: block;
+}
+
+.nav_menu li a:hover {
+    color: green;
+    transition: 0.4s;
+}
+
+.btn_menu {
+    justify-content: end;
+    margin-right: 5%;
+    color: black;
+    display: none;
 }
