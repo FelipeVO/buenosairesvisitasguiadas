@@ -8,7 +8,8 @@
     --color2: ;
     --color3: ;
     --titulo1: ;
-    --background1: hsl(29, 37%, 49%);
+    --background1: hsl(29, 58%, 56%);
+    --background2: hsl(29, 58%, 56%);
 
     /* Fonts */
     --font-titulo: 'Raleway', sans-serif;
@@ -29,17 +30,17 @@ html{
     scroll-behavior: smooth;
 }
 
+h1,h2,h3{
+    font-family: var(--font-titulo);
+    color: var(--titulo1);
+    font-weight: bold;
+}
+
 body{
     font-family: var(--font-body);
     font-size: var(--body-size1);
     background-color: var(--background1);
     color: var(--titulo1);
-}
-
-h1,h2,h3{
-    font-family: var(--font-titulo);
-    color: var(--titulo1);
-    font-weight: bold;
 }
 
 ul{
@@ -50,10 +51,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /* Reusable */
 
@@ -73,6 +70,8 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid whitesmoke;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
 }
 
 .nav_logo{
@@ -97,7 +96,7 @@ header{
 }
 
 .nav_menu li a:hover {
-    color: green;
+    color: var(--background2);
     transition: 0.4s;
 }
 
@@ -112,42 +111,110 @@ ul.show {
     top: 65px;
 }
 
-@media screen and (max-width: 952px) {
-    .nav_logo{
-        font-size: 90%;
-    }
-    .nav_menu li a{
-        font-size: 16px;
-    }
+/* Seccion 1 Inicio */
+
+.hero{
+    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 858px) {
-    .navbar{
-        height: 65px;
-    }
-    .btn_menu{
-        display: inline-flex;
-    }
+.texto-hero{
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .nav_menu{
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 75px);
-        background: hsla(0, 0%, 100%, 0.801);
-        top: -100vh;
-        text-align: center;
-        justify-content: flex-start;
-        align-items: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
+.texto-hero h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    .nav_menu li{
-    margin: 30px 0 0 0;
-    line-height: 30px;
+.texto-hero h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.texto-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: var(--background2);
+    border-radius: 8px;
+    color: white;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Seccion 2 Tours Principales */
+
+.tours1{
+    height: 500px;
+}
+
+
+
+/* Celular */
+
+    /* Navbar */
+    @media screen and (max-width: 952px) {
+        .nav_logo{
+            font-size: 90%;
+        }
+        .nav_menu li a{
+            font-size: 16px;
+        }
     }
     
-    .nav_menu li a:hover {
-        color: black;
+    @media screen and (max-width: 858px) {
+        .navbar{
+            height: 65px;
+        }
+        .btn_menu{
+            display: inline-flex;
+        }
+    
+        .nav_menu{
+            position: fixed;
+            width: 100vw;
+            height: 70vh;
+            background: hsla(0, 0%, 100%, 0.801);
+            top: -100vh;
+            text-align: center;
+            justify-content: flex-start;
+            align-items: center;
+            transition: all .4s;
+            flex-direction: column;
+        }
+    
+        .nav_menu li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+        }
+        
+        .nav_menu li a:hover {
+            color: black;
+        }
     }
-}
+
+    /* Seccion 1 Inicio*/
+    @media screen and (max-width:800px) {
+    .texto-hero h1{
+    font-size: 50px;
+    }
+    }
