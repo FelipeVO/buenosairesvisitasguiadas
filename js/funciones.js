@@ -1,3 +1,5 @@
+/NavBar/ 
+
 addEventListener('DOMContentLoaded', () => {
     const btn_menu = document.querySelector('.btn_menu')
     if (btn_menu) {
@@ -7,3 +9,11 @@ addEventListener('DOMContentLoaded', () => {
         })
     }
 })
+
+const navigationHeight = document.querySelector(".navbar")
+  .offsetHeight;
+
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
