@@ -283,3 +283,38 @@ ul.show {
         font-size: 20px;
     }
     }
+
+    /* Seccion 1 */
+
+    @media screen and (max-width: 858px){
+    #tours{
+        height: 7000px;
+    }
+    .tour {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .contenedor-textos-tour{
+    height: auto;
+    width: 90%;
+}
+
+    .tour h2{
+        font-size: 20px;
+    }
+
+    .tour h3 p{
+        font-size: 10px;
+    }
+
+    .tour img{
+        height: 300px;
+        width: 90%;
+    }
+
+    .derecha{
+        flex-direction: column-reverse;
+    }
+    }
