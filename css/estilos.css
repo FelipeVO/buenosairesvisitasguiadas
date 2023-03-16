@@ -111,7 +111,7 @@ ul.show {
 .hero{
     background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat;
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -128,6 +128,7 @@ ul.show {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 100px;
 }
 
 .texto-hero h1{
@@ -149,7 +150,7 @@ ul.show {
     color: white;
 }
 
-.svg-hero{
+.svg-hero-bottom{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -159,8 +160,7 @@ ul.show {
 /* Seccion 2 Tours Principales */
 
 #tours1{
-    background-color: var(--color3);
-    height: 400vh;
+    height: auto;
     background-color: var(--color1);
     color: white;
     display: flex;
@@ -168,11 +168,12 @@ ul.show {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 .tour{
-    border-bottom: solid 1px black;
-    height: 100vh;
+    
+    height: auto;
     width: 90%;
     display: flex;
     align-items: center;
@@ -181,41 +182,43 @@ ul.show {
 }
 
 .contenedor-textos-tour{
-    height: 80%;
+    height: auto;
     width: 50%;
 }
 .tour h2{
- font-size: 35px;
+ font-size: 2.2em;
  font-weight: bold;
  padding-top: 20px;
 }
 
 .tour h3{
-    font-size: 20px;
+    font-size: 1.7em;
     padding-top: 20px;
     font-weight: 200;
 }
 
 .tour p{
-    font-size: 20px;
+    font-size: 1.5em ;
     position: relative;
 }
 
 .izquierda p::before{
     position: absolute;
     content: "";
-    height: 300px;
+    height: 30vh;
     background-color: currentColor;
     border-radius: 50px;
+    top: 10px;
     left: -10px;
     width: 2px;
 }
 .derecha p::before{
     position: absolute;
     content: "";
-    height: 300px;
+    height: 30vh;
     background-color: currentColor;
     border-radius: 50px;
+    top: 10px;
     width: 2px;
     right: -10px;
 }
@@ -226,8 +229,70 @@ ul.show {
 
 .tour img{
     width: 40%;
-    height: 90%;
+    height: 100%;
     border-radius: 10px;
+}
+
+
+.tours1 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    color: var(--color1);
+    border-radius: 8px;
+    background-color    : white;
+}
+
+
+/* Seccion 3 Informacion de Contacto*/
+
+#info{
+    scroll-padding-top: 500px;
+    height: auto;
+    width: 100%;
+    color: var(--color1);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    position: relative;
+    padding-top: 120px;
+}
+
+.cards{  
+    height: 500px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding-top: 15px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.cards img{
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+}
+.contenedor-textos-cards{
+    color: var(--color1);
+    padding-top: 10px;
+    text-align: top;
+}
+
+.cards:hover{
+    transform: translateY(-30px);
+    transition:  all 0.5s ;
+}
+.svg-hero-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Celular */
@@ -275,40 +340,44 @@ ul.show {
 
     /* Seccion 1 Inicio*/
     @media screen and (max-width:800px) {
-    .texto-hero h1{
+
+     .texto-hero h1{
         font-size: 30px;
-    }
+        }
 
-    .texto-hero h2{
+     .texto-hero h2{
         font-size: 20px;
-    }
+      }
     }
 
-    /* Seccion 1 */
+    /* Seccion 2 Tours */
 
     @media screen and (max-width: 858px){
-    #tours{
-        height: 7000px;
-    }
-    .tour {
+        #tours1{
+        justify-content: flex-start;
+     }
+         .tour {
         flex-direction: column;
         height: auto;
         text-align: center;
-    }
+        justify-content: flex-end;
+     }
 
-    .contenedor-textos-tour{
-    height: auto;
-    width: 90%;
+        .contenedor-textos-tour{
+          height: auto;
+         width: 90%;
 }
 
     .tour h2{
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: bold;
     }
 
-    .tour h3 p{
-        font-size: 10px;
+    .tour h3, .tour p {
+        font-size: 12px;
     }
 
+    
     .tour img{
         height: 300px;
         width: 90%;
@@ -317,4 +386,18 @@ ul.show {
     .derecha{
         flex-direction: column-reverse;
     }
+    }
+
+    /* Seccion 3 Informacion de Contacto*/
+
+    @media screen and (max-width: 858px){
+       #info{
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       .cards{
+        width: 70%;
+        height: 110vh;
+       }
     }
