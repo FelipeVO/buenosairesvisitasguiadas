@@ -168,17 +168,18 @@ ul.show {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 200px;
+    position: relative;
 }
 
 .tour{
-    
     height: auto;
-    width: 90%;
+    width: 100%;
+    padding-left: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    padding-bottom: 50px;
 }
 
 .contenedor-textos-tour{
@@ -200,6 +201,7 @@ ul.show {
 .tour p{
     font-size: 1.5em ;
     position: relative;
+    text-align: justify;
 }
 
 .izquierda p::before{
@@ -225,14 +227,21 @@ ul.show {
 
 .derecha{
     text-align: right;
+    text-align-last: right;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 0;
 }
 
 .tour img{
-    width: 40%;
+    width: 45%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
+.derecha img{
+    border-radius: 0px 10px 10px 0;
+}
 
 .tours1 a{
     display: inline-block;
@@ -247,52 +256,94 @@ ul.show {
 /* Seccion 3 Informacion de Contacto*/
 
 #info{
-    scroll-padding-top: 500px;
     height: auto;
     width: 100%;
     color: var(--color1);
     background-color: white;
     display: flex;
     justify-content: center;
-    gap: 100px;
-    align-items: center;
     position: relative;
-    padding-top: 120px;
+    padding-bottom: 100px;
 }
 
+.contenedor-textos-info{
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    padding-top: 70px;
+}
+
+.contenedor-textos-info h1{
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.contenedor-textos-info p{
+    font-size: 1.5em;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.contedor-cards{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+    align-items: center;
+}
 .cards{  
     height: 500px;
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 1px solid transparent;
     border-radius: 15px;
-    padding-top: 15px;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+    transition: all .9s ease;
 }
 
 .cards img{
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
 }
 .contenedor-textos-cards{
     color: var(--color1);
-    padding-top: 10px;
+    padding: 10px;
     text-align: top;
 }
 
 .cards:hover{
-    transform: translateY(-30px);
-    transition:  all 0.5s ;
+    transform: translateY(-3%);
 }
+
+
 .svg-hero-top{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+}
+
+/* Seccion 4 Contacto */
+
+.contacto{
+    height: 400px;
+    display: none;
+}
+
+/* Seccion 5 Footer */
+
+footer{
+    height: 20vh;
+    background-color: black;
 }
 
 /* Celular */
@@ -355,6 +406,7 @@ ul.show {
     @media screen and (max-width: 858px){
         #tours1{
         justify-content: flex-start;
+        text-align: center;
      }
          .tour {
         flex-direction: column;
@@ -381,6 +433,7 @@ ul.show {
     .tour img{
         height: 300px;
         width: 90%;
+        border-radius: 0;
     }
 
     .derecha{
@@ -393,11 +446,33 @@ ul.show {
     @media screen and (max-width: 858px){
        #info{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
+        height: auto;
+       }
+
+       .contenedor-textos-info{
+        padding-top: 0;
+        width: 90%;
+        text-align: center;
+        font-size: .8em;
+       }
+       
+       .contedor-cards{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
        }
 
        .cards{
-        width: 70%;
-        height: 110vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
        }
+
+       .cards:hover{
+        transform: none;
+    }
     }
