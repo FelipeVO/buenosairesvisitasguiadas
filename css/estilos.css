@@ -25,22 +25,12 @@
     font-family: var(--font-body);
 }
 
+h1, h2, h3{
+    font-family: var(--font-titulo);
+}
 html{
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 100px);
-}
-
-h1,h2{
-    font-family: var(--font-titulo);
-    color: var(--titulo1);
-    font-weight: bold;
-}
-
-body{
-    font-family: var(--font-body);
-    font-size: var(--body-size1);
-    background-color: var(--color1);
-    color: var(--titulo1);
 }
 
 ul{
@@ -71,28 +61,34 @@ header{
 
 .nav_logo{
     width: 20%;
-    text-align: center;
-    justify-content: center;
+    padding-left: 4%;
+}
+
+.nav_logo img{
+    width: 50px;
 }
 
 .nav_menu{
     display: flex;
     width: 80%;
     justify-content: end;
+    padding-right: 50px;
 }
 
 .nav_menu li{
-    padding-right: 50px;
+    padding-right: 10px;
 }
 
 .nav_menu li a{
     color: black;
     display: block;
+    padding: 10px 8px 10px 8px;
+    border-radius: 15px;
+    transition: all 0.4s;
 }
 
 .nav_menu li a:hover {
-    color: var(--color1);
-    transition: 0.4s;
+    background-color: var(--color1);
 }
 
 .btn_menu {
@@ -342,8 +338,36 @@ ul.show {
 /* Seccion 5 Footer */
 
 footer{
-    height: 20vh;
+    height: 18vh;
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer a{
+    color: white;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10%;
+}
+
+.contenedor-footer div{
+    padding: 10px;
+    border-left: solid 1px white;
+}
+
+.link2 a{
+    text-decoration: underline;
 }
 
 /* Celular */
@@ -385,7 +409,7 @@ footer{
         }
         
         .nav_menu li a:hover {
-            color: black;
+           background-color: transparent;
         }
     }
 
@@ -398,6 +422,10 @@ footer{
 
      .texto-hero h2{
         font-size: 20px;
+      }
+
+      .hero{
+        background-size: auto;
       }
     }
 
@@ -413,12 +441,16 @@ footer{
         height: auto;
         text-align: center;
         justify-content: flex-end;
+        padding-right: 0;
+        padding-left: 0;
+        text-align-last: left;
      }
 
         .contenedor-textos-tour{
           height: auto;
          width: 90%;
-}
+         padding-bottom: 20px;
+    }
 
     .tour h2{
         font-size: 25px;
@@ -426,19 +458,26 @@ footer{
     }
 
     .tour h3, .tour p {
-        font-size: 12px;
+        font-size: 16px;
+        text-align: justify;
     }
 
-    
-    .tour img{
-        height: 300px;
-        width: 90%;
-        border-radius: 0;
+    .tour p::before{
+        display: none;
     }
 
     .derecha{
         flex-direction: column-reverse;
     }
+
+
+    .tour img{
+        height: auto;
+        width: 95%;
+        border-radius: 0;
+        padding: none;
+    }
+
     }
 
     /* Seccion 3 Informacion de Contacto*/
@@ -463,6 +502,7 @@ footer{
         flex-direction: column;
         height: auto;
         width: 90%;
+        gap: 20px;
        }
 
        .cards{
@@ -475,4 +515,32 @@ footer{
        .cards:hover{
         transform: none;
     }
+    }
+
+    /* Seccion 5 Footer */
+
+    @media screen and (max-width: 858px){
+        footer{
+        height: 550px;
+        width: 100%;
+        justify-content: start;
+        gap: 10px;
+        padding-top: 10px;
+        }
+
+        .contenedor-footer{
+         display: block;
+         width: 90%;
+         gap: 15px;
+        }
+
+        .contenedor-footer div{
+        padding: 0;
+        border-left: none;
+        padding-top: 5px;
+        }
+
+        .link2{
+            padding-left: 5%;
+        }
     }
