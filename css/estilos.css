@@ -408,6 +408,11 @@ footer a{
     position: relative;
     z-index: 1;
     overflow: hidden;
+    /* background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
 }
 
 .subinicio-contenedor{
@@ -455,9 +460,14 @@ footer a{
     transform: translateX(50%);
 }
 /* Seccion 2 */
+
+.sub-background{
+    background: rgb(238,138,76);
+    background: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, rgba(245,245,220,1) 100%);
+}
 .circuitos{
     height: auto;
-    background-color: blanchedalmond;
+    background-color: transparent;
 }
 
 .circuitos-textos{
@@ -466,15 +476,27 @@ footer a{
 }
 
 .circuitos h2{
-    padding-bottom: 70px;
-}
-.circuitos dd{
-    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
 
 .circuitos dt{
     font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
+
+.circuitos dd{
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+.circuitos li{
+    list-style: disc;
+    padding-left: 10px;
+    list-style-position: inside;
+}
+
 
 /* Celular */
 
