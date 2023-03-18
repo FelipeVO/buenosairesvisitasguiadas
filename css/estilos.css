@@ -281,14 +281,15 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     display: flex;
     justify-content: center;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     color: black;
+    padding-inline: 3%;
 }
 
 .contenedor-textos-info{
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 35%;
     height: auto;
     padding-top: 70px;
 }
@@ -317,8 +318,8 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     align-items: center;
 }
 .cards{  
-    height: 500px;
-    width: 40%;
+    height: auto;
+    width: 39%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,7 +330,7 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
 }
 
 .cards img{
-    height: 500px;
+    height: 370px;
     width: 100%;
     border-radius: 15px 15px 0 0 ;
     object-fit: cover;
@@ -394,11 +395,85 @@ footer a{
     text-decoration: underline;
 }
 
+/* Subpagina */
 /* Seccion 1 SubInicio */
 
 .subinicio{
-    height: 120vh;
+    height: auto;
+    width: 100%;
     background-color: beige;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.subinicio-contenedor{
+    padding-block: 200px;
+    width: 90%;
+    z-index: 3;
+}
+
+.subinicio-textos{
+    width: 50%;
+}
+
+.subinicio-textos h1{
+    font-size: 4em;
+}
+
+.subinicio-textos p{
+    padding-top: 20px;
+    font-size: 1.2em;
+}
+
+.subinicio-botones{
+    padding-top: 40px;
+}
+
+.subinicio-botones a{
+    background-color: transparent;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    border-radius: 7px;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.subinicio-botones a:hover{
+    background-color: var(--color1);
+    color: white;
+}
+
+.subinicio img{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    z-index: 2;
+    transform: translateX(50%);
+}
+/* Seccion 2 */
+.circuitos{
+    height: auto;
+    background-color: blanchedalmond;
+}
+
+.circuitos-textos{
+    padding: 30px;
+    width: 90%;
+}
+
+.circuitos h2{
+    padding-bottom: 70px;
+}
+.circuitos dd{
+    padding-bottom: 10px;
+}
+
+.circuitos dt{
+    font-weight: bold;
 }
 
 /* Celular */
@@ -577,3 +652,18 @@ footer a{
             padding-left: 5%;
         }
     }
+
+/* Subpagina */
+
+/* Seccion 1 Inicio */
+
+@media screen and (max-width: 858px){
+    .subinicio-contenedor{
+        padding-block: 100px;
+        width: 90%;
+    }
+    
+    .subinicio-textos{
+        width: 100%;
+    }
+}
