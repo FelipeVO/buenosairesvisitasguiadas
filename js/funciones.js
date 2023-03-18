@@ -1,4 +1,4 @@
-/NavBar/ 
+//NavBar
 
 addEventListener('DOMContentLoaded', () => {
     const btn_menu = document.querySelector('.btn_menu')
@@ -17,3 +17,26 @@ document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight + "px"
 );
+
+// Contacto
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_4dp9szl';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
