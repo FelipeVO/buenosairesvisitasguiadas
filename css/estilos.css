@@ -6,7 +6,7 @@
     /* Colores */
     --titulo1: ;
     --color1: hsl(29, 58%, 56%);
-    --color2: hsl(29, 58%, 56%);
+    --color2: rgb(208, 178, 149);
     --color3: white;
 
     /* Fonts */
@@ -141,9 +141,19 @@ ul.show {
     display: inline-block;
     text-decoration: none;
     padding: 12px 15px;
-    background: var(--color1);
-    border-radius: 8px;
+    /* background: var(--color1); */
+    border-radius: 10px;
+    border: 1px solid white;
     color: white;
+    font-weight: bold;
+    background-color: transparent;
+
+    transition: .3s ease;
+}
+
+.texto-hero a:hover{
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
 }
 
 .svg-hero-bottom{
@@ -156,6 +166,8 @@ ul.show {
 /* Seccion 2 Tours Principales */
 
 #tours1{
+    background: var(--color2);
+background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     height: auto;
     background-color: var(--color1);
     color: white;
@@ -198,6 +210,8 @@ ul.show {
     font-size: 1.5em ;
     position: relative;
     text-align: justify;
+    /* border-left: 2px solid white;
+    padding-left: 15px; */
 }
 
 .izquierda p::before{
@@ -243,11 +257,19 @@ ul.show {
     display: inline-block;
     text-decoration: none;
     padding: 12px 15px;
-    color: var(--color1);
     border-radius: 8px;
-    background-color    : white;
+    /* color: var(--color1);
+    background-color: white; */
+    border: 2px white solid;
+    color: white;
+
+    transition: .3s ease;
 }
 
+.tours1 a:hover{
+    color: var(--color1);
+    background-color: white;
+}
 
 /* Seccion 3 Informacion de Contacto*/
 
@@ -260,6 +282,7 @@ ul.show {
     justify-content: center;
     position: relative;
     padding-bottom: 100px;
+    color: black;
 }
 
 .contenedor-textos-info{
@@ -275,9 +298,10 @@ ul.show {
     font-weight: bold;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-}
+    
+    /* color: white;
+    -webkit-text-stroke: 1px black;*/
+} 
 
 .contenedor-textos-info p{
     font-size: 1.5em;
@@ -311,7 +335,7 @@ ul.show {
     object-fit: cover;
 }
 .contenedor-textos-cards{
-    color: var(--color1);
+    color: black;
     padding: 10px;
     text-align: top;
 }
@@ -368,6 +392,13 @@ footer a{
 
 .link2 a{
     text-decoration: underline;
+}
+
+/* Seccion 1 SubInicio */
+
+.subinicio{
+    height: 120vh;
+    background-color: beige;
 }
 
 /* Celular */
@@ -473,7 +504,7 @@ footer a{
 
     .tour img{
         height: auto;
-        width: 95%;
+        width: 100vw;
         border-radius: 0;
         padding: none;
     }
