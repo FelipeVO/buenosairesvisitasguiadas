@@ -380,6 +380,7 @@ ul.show {
     justify-content: center;
     width: 90%;
     margin-left: 5%;
+    margin-block: 20px;
 }
 
 .opniones-box{
@@ -389,8 +390,14 @@ ul.show {
     border-image: linear-gradient(var(--color1), #c4a80c) 30;
     border-width: 4px;
     border-radius: 10px;
-    border-style: solid;
+    border-style: solid; 
     text-align: center;
+    box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.4);
+    transition: .3s ease;
+}
+
+.opniones-box:hover{
+    transform: translateY(-3%);
 }
 
 .grande{
