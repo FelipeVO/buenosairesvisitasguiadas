@@ -109,7 +109,7 @@ ul.show {
 /* Seccion 1 Inicio */
 
 .hero{
-    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat;
+    background-image: linear-gradient(120deg, rgba(192, 169, 93, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat;
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
@@ -144,12 +144,12 @@ ul.show {
 .texto-hero a{
     display: inline-block;
     text-decoration: none;
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 1px solid white;
+    padding: 14px 16px;
+    border-radius: 5px;
+    border: 1px solid orange;
     color: white;
     font-weight: bold;
-    background-color: transparent;
+    background-color: orange;
     transition: .3s ease;
 }
 
@@ -168,8 +168,8 @@ ul.show {
 /* Seccion 2 Tours Principales */
 
 #tours1{
-    background: var(--color2);
-background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
+    background: var(--body-size1);
+    background: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, var(--color1) 100%);
     height: auto;
     background-color: var(--color1);
     color: white;
@@ -203,19 +203,25 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
 }
 
 .tour h3{
-    font-size: 1.7em;
+    font-size: 1.4em;
     padding-top: 20px;
     font-weight: 200;
+    text-align: justify;
 }
 
 .tour p{
     font-size: 1.2em ;
     position: relative;
     text-align: justify;
-    border-left: 2px solid white;
+    border-left: 2px solid lemonchiffon;
     padding-left: 15px; 
 }
 
+.tour br{
+    display: block; 
+    content: "";
+    margin-top: 10px; 
+}
 
 .derecha{
     text-align: right;
@@ -226,7 +232,7 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
 }
 
 .derecha p{
-    border-right: 2px solid white;
+    border-right: 2px solid lemonchiffon;
     padding-right: 15px; 
     border-left: 0;
     padding-left: 0;
@@ -288,10 +294,17 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     font-weight: bold;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
-} 
+}   
+
+.contenedor-textos-info h1::before{
+    content: "Nosotras";
+    color: var(--color1);
+    font-size: .4em;
+    display: block;
+}
 
 .contenedor-textos-info p{
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-top: 20px;
     text-align: justify;
 }
@@ -326,6 +339,10 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     padding: 10px;
     text-align: top;
 }
+.contenedor-textos-cards h2{
+    font-size: 1.2em;
+    font-weight: 100;
+}
 
 .cards:hover{
     transform: translateY(-3%);
@@ -339,7 +356,53 @@ background: linear-gradient(0deg, var(--color2) 0%, var(--color1) 100%);
     width: 100%;
 }
 
-/* Seccion 4 Contacto */
+/* Seccion 4 Opiniones */
+
+.opiniones{
+    padding-block: 20px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.opiniones h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: auto;
+    display: none;
+}
+
+.opiniones-contenedor{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.opniones-box{
+    width: 100%;
+    margin-inline: 20px;
+    padding-block: 40px;
+    border-image: linear-gradient(var(--color1), #c4a80c) 30;
+    border-width: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+}
+
+.grande{
+    padding-block: 60px;
+}
+
+.opniones-box h3{
+    color: var(--color1);
+}
+
+
+/* Seccion 5 Contacto */
 
 .contacto{
     width: 100%;
@@ -422,16 +485,26 @@ form{
 .contacto-texto{
     width: 40%;
     text-align: right;
+    margin-left: 30px;
 }
 
 .contacto h2{
     font-size: 3em;
 }
 
+.contacto h2::before{
+    content: "Contactanos";
+    color: var(--color1);
+    font-size: .4em;
+    display: block;
+}
+
 .contacto-texto h3{
     margin-bottom: 30px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 100;
+    text-align: justify;
+    direction: rtl;
 }
 
 .contacto-texto li{
@@ -544,8 +617,18 @@ padding-left: 9px;
 }
 
 .subinicio-botones a:hover{
+    color: var(--color1);
+    background-color: white;
+    border: 1px solid transparent;
+}
+
+#a1{
     background-color: var(--color1);
     color: white;
+}
+
+#a1:hover{
+    background-color: rgb(196, 112, 34);
 }
 
 .subinicio img{
@@ -743,7 +826,26 @@ padding-left: 9px;
     }
     }
 
-    /* Seccion 4 Contacto */
+    /* Seccion 4 Opiniones */
+    @media screen and (max-width: 858px){
+        .opiniones-contenedor{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            justify-content: space-between;
+        }
+        .opiniones-box{
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
+
+        .grande{
+            padding-block: 40px;
+        }
+    }
+
+    /* Seccion 5 Contacto */
 
     @media screen and (max-width: 858px){
         .contacto{
@@ -779,7 +881,10 @@ padding-left: 9px;
             width: 90%; 
             height: auto;
             text-align: left;
+            /* margin-left: 0; */
         }
+
+        
 
         .contacto h2{
             font-size: 1.3em;
@@ -787,6 +892,8 @@ padding-left: 9px;
 
         .contacto-texto h3{
             font-size: .8em;
+            direction: ltr;
+            margin-bottom: 5px;
         }
 
         .contacto-texto li{
@@ -811,6 +918,7 @@ padding-left: 9px;
         justify-content: start;
         gap: 10px;
         padding-block: 12px;
+        padding-bottom: 20px;
         }
 
         .contenedor-footer{
