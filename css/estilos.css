@@ -738,10 +738,8 @@ padding-left: 9px;
         font-size: 20px;
       }
 
-      .hero{
-        height: auto;
-        width: auto;
-        max-width: 900px;
+      .hero {
+        background-size: contain;
         
       }
     }
@@ -825,8 +823,7 @@ padding-left: 9px;
        .cards{
         justify-content: center;
         align-items: center;
-        width: 70%;
-        height: auto;
+        width: 60%;
         font-size: 12px;
        }
 
@@ -949,7 +946,9 @@ padding-left: 9px;
         }
 
         .link2{
-            padding-left: 5%;
+            margin-left: 5px;
+            width: 90%;
+            text-align: left;
         }
     }
 
