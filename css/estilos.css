@@ -25,12 +25,13 @@
     font-family: var(--font-body);
 }
 
-h1, h2, h3{
-    font-family: var(--font-titulo);
-}
 html{
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 100px);
+}
+
+h1, h2, h3{
+    font-family: var(--font-titulo);
 }
 
 p, a{
@@ -740,7 +741,14 @@ padding-left: 9px;
 
       .hero {
         background-size: contain;
+        width: 100vw;
+        overflow: auto;
+        object-fit: scale-down;
         
+      }
+
+      .hero img{
+        object-fit: scale-down;
       }
     }
 
