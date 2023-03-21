@@ -531,13 +531,13 @@ form{
 footer{
     height: auto;
     background-color: black;
-    color: white;
+    color: grey;
     padding-top: 25px;
     padding-bottom: 15px;
 }
 
 footer a{
-    color: white;
+    color: grey;
 }
 
 .contenedor-footer{
@@ -559,7 +559,7 @@ footer a{
 }
 
 .contenedor-footer a{
-border-left: 1px solid white;
+border-left: 1px solid;
 padding-left: 9px;
 }
 
@@ -738,6 +738,12 @@ padding-left: 9px;
         font-size: 20px;
       }
 
+      .hero{
+        height: auto;
+        width: auto;
+        max-width: 900px;
+        
+      }
     }
 
     /* Seccion 2 Tours */
@@ -916,7 +922,7 @@ padding-left: 9px;
             font-size: .8em; 
     }}
 
-    /* Seccion 5 Footer */
+    /* Seccion 6 Footer */
 
     @media screen and (max-width: 858px){
         footer{
@@ -926,6 +932,8 @@ padding-left: 9px;
         gap: 10px;
         padding-block: 12px;
         padding-bottom: 20px;
+        text-align: left;
+        font-size: .6em;
         }
 
         .contenedor-footer{

@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="../assets/bus.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/c8452dd290.js" crossorigin="anonymous"></script>
-    <script src="../js/funciones.js"></script>
     <title>Visitas Guiadas</title>
 </head>
 
@@ -25,7 +24,7 @@
                 </li>
 
                 <li class="nav_item">
-                    <a href="#tours1" class="nav_link"> Circuitos</a>
+                    <a href="#circuitos" class="nav_link"> Circuitos</a>
                 </li>
                 <li class="nav_item">
                     <a href="#contacto" class="nav_link"> Contacto</a>
@@ -61,7 +60,7 @@
     </section>
 
 <!-- Seccion 2 -->
-<section class="sub-background">
+<section class="sub-background" id="circuitos">
     <section class="circuitos historicos" id="circuito1">
         <div class= "circuitos-textos">
             <h2>1. Circuitos históricos</h2>
@@ -161,6 +160,54 @@
         </div>
     </section>
 </section>
+
+<!-- Seccion 5 Contacto -->
+<section class="contacto" id="contacto">
+    <section class="contacto-box">
+        <form id="form">
+            <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            </div>
+            
+            <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="text" name="email" id="email" class="datos" required>
+            </div>
+            <div class="field">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" class="datos">
+            </div>
+            <div class="field">
+                <label for="mensaje">Mensaje</label>
+                <textarea type="text" name="mensaje" id="mensaje" rows="10" required></textarea>
+            </div>
+        
+            <input type="submit" id="button" value="Enviar" >
+        </form>
+
+        <div class="contacto-texto">
+            <h2>Consultas</h2>
+            <h3>Envíenos sus comentarios y consultas completando el siguiente formulario o escribanos por nuestras redes <br>
+                A la brevedad nos contactaremos con usted</h3>
+
+            <ul>
+                <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 11 3692 0773</a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 9 11 5992 7269</a> </li></li>
+                <li><a href="" target="_blank"><i class="fa-solid fa-envelope"></i> bue.salidaseducativas@gmail.com</a>
+                <li> <a href="https://www.instagram.com/buenosaires.salidaseducativas/" target="_blank"><i class="fa-brands fa-instagram"></i> @buenosaires.salidaseducativas</a></li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('7OqZPK9k9kMsm3hKP')</script>
+  
+<script src="../js/funciones.js"></script>
 
 <!-- Seccion Footer -->
 <footer>
