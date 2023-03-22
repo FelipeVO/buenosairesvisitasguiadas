@@ -201,6 +201,7 @@ ul.show {
     height: auto;
     width: 50%;
 }
+
 .tour h2{
  font-size: 2.2em;
  font-weight: bold;
@@ -245,7 +246,7 @@ ul.show {
 
 .tour img{
     width: 45%;
-    height: 100%;
+    height: 40%;
     border-radius: 10px 0 0 10px;
 }
 
@@ -800,6 +801,7 @@ padding-left: 9px;
         padding-right: 0;
         padding-left: 0;
         text-align-last: left;
+        padding-bottom: 0;
      }
 
         .contenedor-textos-tour{
@@ -828,12 +830,14 @@ padding-left: 9px;
 
 
     .tour img{
-        height: auto;
+        height: 200px;
         width: 100vw;
         border-radius: 0;
         padding: none;
     }
 
+    .tours1 a{
+        margin-top: 20px;
     }
 
     /* Seccion 3 Informacion de Contacto*/
@@ -906,7 +910,6 @@ padding-left: 9px;
         .contacto-box{
             flex-direction: column-reverse;
             align-items: center;
-            width: 95%;
             padding-bottom: 20px;
         }
         
@@ -932,7 +935,7 @@ padding-left: 9px;
             width: 90%; 
             height: auto;
             text-align: left;
-            /* margin-left: 0; */
+            margin-left: 0; 
         }
 
         
@@ -997,7 +1000,7 @@ padding-left: 9px;
 
 /* Seccion 1 Inicio */
 
-@media screen and (max-width: 858px){
+    @media screen and (max-width: 858px){
     .subinicio-contenedor{
         padding-block: 100px;
         width: 90%;
@@ -1006,4 +1009,4 @@ padding-left: 9px;
     .subinicio-textos{
         width: 100%;
     }
-}
+}}
