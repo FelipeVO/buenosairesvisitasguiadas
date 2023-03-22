@@ -121,6 +121,10 @@ ul.show {
     overflow: hidden;
 }
 
+.hero img{
+    display: none   ;
+}
+
 .texto-hero{
     color: white;
     height: 500px;
@@ -740,15 +744,23 @@ padding-left: 9px;
       }
 
       .hero {
-        background-size: contain;
+        background-size: 0 0;
         width: 100vw;
         overflow: auto;
         object-fit: scale-down;
-        
+        background-color: black;
       }
 
+    .hero, .texto-hero, .svg-hero-bottom{
+        z-index: 3;
+      }
       .hero img{
-        object-fit: scale-down;
+        display: block;
+        width: 200vw;
+        height: 700px;
+        left: -50%;
+        position: absolute;
+        z-index: -1;
       }
     }
 
