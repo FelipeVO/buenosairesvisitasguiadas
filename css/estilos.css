@@ -747,14 +747,15 @@ padding-left: 9px;
       .hero {
         background-size: 0 0;
         width: 100vw;
-        overflow: auto;
-        object-fit: scale-down;
+        overflow:hidden
       }
 
     .hero, .texto-hero, .svg-hero-bottom{
         z-index: 3;
       }
     
+    
+
       .hero img{
         display: block;
         width: 200vw;
