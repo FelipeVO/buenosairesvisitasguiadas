@@ -27,7 +27,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 100px);
+    scroll-padding-top: var(--scroll-padding, 90px);
 }
 
 h1, h2, h3{
@@ -194,7 +194,7 @@ ul.show {
     background: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, var(--color1) 100%);
     height: auto;
     background-color: var(--color1);
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,6 +202,37 @@ ul.show {
     gap: 20px;
     padding-bottom: 200px;
     position: relative;
+}
+
+.texto-inicio{
+    height: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-inicio h2{
+    width: auto;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.texto-inicio h2::before{
+    content: "01. Lo que ofrecemos";
+    color: white;
+    font-size: .3em;
+    display: block;
+
+}
+.texto-inicio p{
+    font-size: 1.2em ;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 .tour{
@@ -222,12 +253,11 @@ ul.show {
 .tour h2{
  font-size: 2.2em;
  font-weight: bold;
- padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .tour h3{
     font-size: 1.4em;
-    padding-top: 20px;
     font-weight: 200;
     text-align: justify;
 }
@@ -236,11 +266,11 @@ ul.show {
     font-size: 1.2em ;
     position: relative;
     text-align: justify;
-    border-left: 2px solid lemonchiffon;
+    border-left: 2px solid;
     padding-left: 15px; 
 }
 
-.tour br{
+.tour br, .texto-inicio br{
     display: block; 
     content: "";
     margin-top: 10px; 
@@ -255,7 +285,7 @@ ul.show {
 }
 
 .derecha p{
-    border-right: 2px solid lemonchiffon;
+    border-right: 2px solid;
     padding-right: 15px; 
     border-left: 0;
     padding-left: 0;
@@ -320,9 +350,9 @@ ul.show {
 }   
 
 .contenedor-textos-info h1::before{
-    content: "Nosotras";
+    content: "02. Nosotras";
     color: var(--color1);
-    font-size: .4em;
+    font-size: .3em;
     display: block;
 }
 
@@ -528,9 +558,9 @@ form{
 }
 
 .contacto h2::before{
-    content: "Contactanos";
+    content: "03. Contactanos";
     color: var(--color1);
-    font-size: .4em;
+    font-size: .3em;
     display: block;
     text-align: right;
 }
@@ -817,7 +847,21 @@ padding-left: 9px;
         justify-content: flex-start;
         text-align: center;
      }
-         .tour {
+
+        .texto-inicio{
+            width: 90%;
+        }
+
+        .texto-inicio h2{
+            font-size: 26px;
+        }
+
+        .texto-inicio p{
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+
+        .tour {
         flex-direction: column;
         height: auto;
         text-align: center;
