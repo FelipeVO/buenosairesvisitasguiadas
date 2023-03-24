@@ -10,6 +10,39 @@ addEventListener('DOMContentLoaded', () => {
     }
 })
 
+
+ addEventListener('DOMContentLoaded', () => {
+  const nav_link = document.querySelector('.nav_link')
+  if (nav_link) {
+     nav_link.addEventListener('click', () => {
+         const nav_menu = document.querySelector('.nav_menu')
+         nav_menu.classList.toggle('show')
+     })
+  }
+ })
+
+ addEventListener('DOMContentLoaded', () => {
+  const jvs1 = document.querySelector('.jvs1')
+  if (jvs1) {
+     jvs1.addEventListener('click', () => {
+         const nav_menu = document.querySelector('.nav_menu')
+         nav_menu.classList.toggle('show')
+     })
+  }
+ })
+
+ addEventListener('DOMContentLoaded', () => {
+  const jvs2 = document.querySelector('.jvs2')
+  if (jvs2) {
+     jvs2.addEventListener('click', () => {
+         const nav_menu = document.querySelector('.nav_menu')
+         nav_menu.classList.toggle('show')
+     })
+  }
+ })
+
+
+
 const navigationHeight = document.querySelector(".navbar")
   .offsetHeight;
 
@@ -17,6 +50,35 @@ document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight + "px"
 );
+
+// Animacion
+
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       console.log(entry)
+//       if (entry.isIntersecting) {
+//           entry.target.classList.add('show');
+//       }
+//     });
+// });
+
+// const hiddenElements = document.querySelectorAll('.hidden');
+// hiddenElements.forEach((el) => observer.observe(el));
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+    } else {
+        entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
 
 // Contacto
 
