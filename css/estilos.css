@@ -514,12 +514,17 @@ form{
 
 .contacto-texto{
     width: 40%;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
     margin-left: 30px;
 }
 
 .contacto h2{
     font-size: 3em;
+    border-bottom: 1px solid;
+    
 }
 
 .contacto h2::before{
@@ -527,6 +532,7 @@ form{
     color: var(--color1);
     font-size: .4em;
     display: block;
+    text-align: right;
 }
 
 .contacto-texto h3{
@@ -867,6 +873,7 @@ padding-left: 9px;
         justify-content: center;
         gap: 20px;
         height: auto;
+        padding-bottom: 20px;
        }
 
        .contenedor-textos-info{
@@ -877,7 +884,7 @@ padding-left: 9px;
        }
        
        .contedor-cards{
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         width: 90%;
         gap: 20px;
@@ -886,8 +893,9 @@ padding-left: 9px;
        .cards{
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 50%;
         font-size: 12px;
+        text-align: center;
        }
 
        .cards img{
@@ -952,6 +960,7 @@ padding-left: 9px;
         .contacto-texto{
             width: 90%; 
             height: auto;
+            align-items: flex-start;
             text-align: left;
             margin-left: 0; 
         }
@@ -960,6 +969,13 @@ padding-left: 9px;
 
         .contacto h2{
             font-size: 1.3em;
+            align-self: center;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .contacto h2::before{
+        text-align: center;
         }
 
         .contacto-texto h3{
