@@ -5,9 +5,9 @@
 :root {
     /* Colores */
     --titulo1: ;
-    --color1: hsl(29, 58%, 56%);
-    --color2: rgb(208, 178, 149);
-    --color3: white;
+    --color1: hsl(202, 71%, 66%);
+    --color2: hsl(212, 47%, 56%);
+    --color3: #CCF6FF;
 
     /* Fonts */
     --font-titulo: 'Raleway', sans-serif;
@@ -127,7 +127,7 @@ ul.show {
 /* Seccion 1 Inicio */
 
 .hero{
-    background-image: linear-gradient(120deg, rgba(192, 169, 93, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat;
+    /* background-image: linear-gradient(120deg, rgba(192, 169, 93, 0.678) 0%, rgba(253, 159, 133, 0.671) 100%), url(../assets/inicio-banner.jpg); background-repeat: no-repeat; */
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
@@ -168,16 +168,16 @@ ul.show {
     text-decoration: none;
     padding: 14px 16px;
     border-radius: 5px;
-    border: 1px solid orange;
+    border: 1px solid var(--color1);
     color: white;
     font-weight: bold;
-    background-color: orange;
+    background-color: var(--color1);
     transition: .3s ease;
 }
 
 .texto-hero a:hover{
-    background-color: var(--color1);
-    border: 1px solid var(--color1);
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
 }
 
 .svg-hero-bottom{
@@ -191,7 +191,7 @@ ul.show {
 
 #tours1{
     background: var(--body-size1);
-    background: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, var(--color1) 100%);
+    background: linear-gradient(0deg, rgba(98, 163, 201, 0.908) 0%, rgb(171, 197, 218) 35%, var(--color1) 100%);
     height: auto;
     background-color: var(--color1);
     color: black;
@@ -351,7 +351,7 @@ ul.show {
 
 .contenedor-textos-info h1::before{
     content: "02. Nosotras";
-    color: var(--color1);
+    color: var(--color2);
     font-size: .3em;
     display: block;
 }
@@ -468,7 +468,7 @@ ul.show {
     width: 100%;
     height: auto;
     padding: 30px;
-    background-color: beige;
+    background-color: var(--color3);
     /* display: flex;
     justify-content: center; */
 }
@@ -559,7 +559,7 @@ form{
 
 .contacto h2::before{
     content: "03. Contactanos";
-    color: var(--color1);
+    color: var(--color2);
     font-size: .3em;
     display: block;
     text-align: right;
@@ -636,7 +636,7 @@ padding-left: 9px;
 .subinicio{
     height: auto;
     width: 100%;
-    background-color: beige;
+    background-color: rgb(255, 235, 205);
     color: black;
     display: flex;
     justify-content: center;
@@ -694,7 +694,7 @@ padding-left: 9px;
 }
 
 #a1:hover{
-    background-color: rgb(196, 112, 34);
+    background-color: rgb(83, 128, 212);
 }
 
 .subinicio img{
@@ -703,12 +703,13 @@ padding-left: 9px;
     width: 70%;
     z-index: 2;
     transform: translateX(50%);
+    color: black;
 }
 /* Seccion 2 */
 
 .sub-background{
-    background: rgb(238,138,76);
-    background: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, rgba(245,245,220,1) 100%);
+    background: var(--color1);
+    background: linear-gradient(0deg, var(--color1) 0%, rgb(90, 143, 221) 35%, rgba(255, 235, 205) 100%);
 }
 .circuitos{
     height: auto;
