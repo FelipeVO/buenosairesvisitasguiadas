@@ -327,7 +327,8 @@ ul.show {
     color: var(--color1);
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     padding-bottom: 70px;
     color: black;
@@ -337,9 +338,8 @@ ul.show {
 .contenedor-textos-info{
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 55%;
     height: auto;
-    padding-top: 70px;
 }
 
 .contenedor-textos-info h1{
@@ -363,15 +363,14 @@ ul.show {
 }
 
 .contedor-cards{
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: right;
-    gap: 10%;
     align-items: center;
 }
 .cards{  
     height: auto;
-    width: 39%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,12 +387,22 @@ ul.show {
     object-fit: cover;
 }
 .contenedor-textos-cards{
+    width: 95%;
     color: black;
-    padding: 10px;
-    text-align: top;
+    padding-block: 10px;
+    text-align: center;
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
 }
 .contenedor-textos-cards h2{
     font-size: 1.2em;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+
+.contenedor-textos-cards h3{
+    font-size: .8em;
     font-weight: 100;
 }
 
@@ -810,7 +819,7 @@ padding-left: 9px;
     
     
 
-      .hero img{
+      /* .hero img{
         display: block;
         width: 200vw;
         height: 700px;
@@ -839,7 +848,7 @@ padding-left: 9px;
         height: 100%;
         background-image: linear-gradient(0deg, rgba(238,138,76,0.908000700280112) 0%, rgba(210,158,24,1) 35%, var(--color1) 100%);
         z-index: 100;
-    }
+    } */
     }
     /* Seccion 2 Tours */
 
@@ -909,6 +918,12 @@ padding-left: 9px;
         margin-top: 20px;
     }
 
+    .tour br, .texto-inicio br{
+        display: block; 
+        content: "";
+        margin-top: 15px; 
+    }
+
     /* Seccion 3 Informacion de Contacto*/
 
     @media screen and (max-width: 858px){
@@ -929,16 +944,15 @@ padding-left: 9px;
        }
        
        .contedor-cards{
-        flex-direction: row;
+        flex-direction: column;
         height: auto;
         width: 90%;
-        gap: 20px;
        }
 
        .cards{
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 80%;
         font-size: 12px;
         text-align: center;
        }
