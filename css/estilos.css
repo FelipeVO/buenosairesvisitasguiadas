@@ -46,6 +46,8 @@ a {
     text-decoration: none;
 }
 
+
+
 /* Animaciones */
 
 .hidden{
@@ -333,6 +335,12 @@ ul.show {
     padding-bottom: 70px;
     color: black;
     padding-inline: 3%;
+    }
+    
+#info br{
+    display: block !important; 
+    content: "" !important;
+    margin-top: 15px !important; 
 }
 
 .contenedor-textos-info{
@@ -347,6 +355,7 @@ ul.show {
     font-weight: bold;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
+    width: 450px;
 }   
 
 .contenedor-textos-info h1::before{
@@ -397,7 +406,7 @@ ul.show {
 }
 .contenedor-textos-cards h2{
     font-size: 1.2em;
-    font-weight: 100;
+    font-weight: bold;
     padding-bottom: 5px;
 }
 
@@ -645,7 +654,7 @@ padding-left: 9px;
 .subinicio{
     height: auto;
     width: 100%;
-    background-color: rgb(255, 235, 205);
+    background-color: white;
     color: black;
     display: flex;
     justify-content: center;
@@ -692,9 +701,9 @@ padding-left: 9px;
 }
 
 .subinicio-botones a:hover{
-    color: var(--color1);
-    background-color: white;
-    border: 1px solid transparent;
+    color: white;
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
 }
 
 #a1{
@@ -718,7 +727,7 @@ padding-left: 9px;
 
 .sub-background{
     background: var(--color1);
-    background: linear-gradient(0deg, var(--color1) 0%, rgb(90, 143, 221) 35%, rgba(255, 235, 205) 100%);
+    background: linear-gradient(0deg, var(--color1) 0%, rgb(90, 143, 221) 35%, rgb(255, 255, 255) 100%);
 }
 .circuitos{
     height: auto;
@@ -816,9 +825,7 @@ padding-left: 9px;
     .hero, .texto-hero, .svg-hero-bottom{
         z-index: 3;
       }
-    
-    
-
+      
       /* .hero img{
         display: block;
         width: 200vw;
@@ -864,6 +871,7 @@ padding-left: 9px;
 
         .texto-inicio h2{
             font-size: 26px;
+            padding-inline: 30px;
         }
 
         .texto-inicio p{
@@ -889,7 +897,7 @@ padding-left: 9px;
     }
 
     .tour h2{
-        font-size: 25px;
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -919,9 +927,9 @@ padding-left: 9px;
     }
 
     .tour br, .texto-inicio br{
-        display: block; 
-        content: "";
-        margin-top: 15px; 
+        display: block !important; 
+        content: "" !important;
+        margin-top: 15px !important; 
     }
 
     /* Seccion 3 Informacion de Contacto*/
@@ -941,6 +949,13 @@ padding-left: 9px;
         width: 90%;
         text-align: center;
         font-size: .6em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       .contenedor-textos-info h1{
+        width: 95%;
        }
        
        .contedor-cards{
@@ -952,18 +967,23 @@ padding-left: 9px;
        .cards{
         justify-content: center;
         align-items: center;
-        width: 80%;
-        font-size: 12px;
+        width: 100%;
+        height: auto;
+        font-size: 11px;
         text-align: center;
        }
 
        .cards img{
-        height: 100%;
+        height: 300px;
        }
 
        .cards:hover{
         transform: none;
-    }
+        }
+
+        .contenedor-textos-cards{
+            gap: 0;
+        }
     }
 
     /* Seccion 4 Opiniones */
@@ -1031,6 +1051,7 @@ padding-left: 9px;
             align-self: center;
             text-align: justify;
             margin-bottom: 20px;
+            padding-inline: 20px;
         }
 
         .contacto h2::before{
