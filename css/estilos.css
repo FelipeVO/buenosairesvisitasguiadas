@@ -29,7 +29,6 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 90px);
 }
-
 h1, h2, h3{
     font-family: var(--font-titulo);
 }
@@ -98,6 +97,7 @@ header{
 .nav_logo p{
     padding-left: 5%;
     color: black;
+    font-weight: bold;
 }
 
 .nav_logo span{
@@ -164,25 +164,28 @@ ul.show {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 110px;
     width: 100%;
 }
 
 .texto-hero h1{
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .texto-hero h2{
     font-size: 1.5em;
     text-align: center;
     color: var(--color2);
+    margin-bottom: 40px
 }
 
 .texto-inicio p{
-    font-size: 1em ;
+    width: 100%;
+    font-size: 1.3em ;
     text-align: justify;
-    padding-inline: 5%;
+    padding-inline: 15%;
     font-weight: bold;
 }
 
@@ -223,7 +226,7 @@ ul.show {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     padding-bottom: 200px;
     position: relative;
 }
@@ -231,11 +234,18 @@ ul.show {
 .tour-titulo{
     text-align: center;
     margin-bottom: 40px;
-    font-size: 1.5em;
+    font-size: 2.1em;
     font-weight: bold;
     border-bottom: solid 1px;
     padding-inline: 30px;
     padding-bottom: 5px;
+}
+
+.tour-titulo h2::before{
+    content: "01. Circuitos";
+    color: white;
+    font-size: .3em;
+    display: block;
 }
 
 .tour{
@@ -245,7 +255,7 @@ ul.show {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .contenedor-textos-tour{
@@ -281,10 +291,13 @@ ul.show {
 
 .derecha{
     text-align: right;
-    text-align-last: right;
     width: 100%;
     padding-right: 5%;
     padding-left: 0;
+}
+
+.derecha h3{
+    text-align: right;
 }
 
 .derecha p{
@@ -302,6 +315,12 @@ ul.show {
 
 .derecha img{
     border-radius: 0px 10px 10px 0;
+}
+
+
+.imagen-boton{
+    width: 50px;
+    transform: translatey(7px);
 }
 
 .tours1 a{
@@ -734,19 +753,40 @@ padding-left: 9px;
 .circuitos{
     height: auto;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5%;
 }
 
 .circuitos-textos{
     padding: 30px;
-    width: 90%;
+    width: 50%;
 }
 
 .circuitos h2{
     margin-bottom: 40px;
     font-size: 2em;
+    display: inline;
+}
+
+.circuitos .nav_link{
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid orangered;
+    color: orangered;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.circuitos .nav_link:hover{
+    color: white;
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
 }
 
 .circuitos dt{
+    font-size: 1.1em;
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -759,10 +799,16 @@ padding-left: 9px;
 
 .circuitos li{
     list-style: disc;
-    padding-left: 10px;
-    list-style-position: inside;
+    margin-left: 20px;
+    list-style-position: outside;
+    
 }
 
+.contenedor-slide{
+    background-color: black;
+    width: 30%;
+    height: 700px;
+}
 
 /* Celular */
 
@@ -943,12 +989,17 @@ padding-left: 9px;
         font-size: 0.8em;
     }
 
+    .imagen-boton{
+        width: 50px;
+        transform: translatey(30px);
+    }
+
     .tour br, .texto-inicio br{
         display: block !important; 
         content: "" !important;
         margin-top: 15px !important; 
     }
-
+    }
     /* Seccion 3 Informacion de Contacto*/
 
     @media screen and (max-width: 858px){
@@ -1140,4 +1191,25 @@ padding-left: 9px;
     .subinicio-textos{
         width: 100%;
     }
-}}
+
+    .circuitos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .circuitos-textos{
+        width: 100%;
+    }
+
+
+
+    .circuitos h2{
+        display: block; 
+        margin-bottom: 20px;
+    }
+    
+
+    .circuitos dl{
+        margin-top: 20px;
+    }
+}
