@@ -640,7 +640,8 @@ footer a{
 .contenedor-footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
+    align-items: center; 
     width: 90%;
     gap: 10%;
     margin-left: 5px;
@@ -804,14 +805,10 @@ padding-left: 9px;
     
 }
 
+
 .contenedor-slide{
-    /* background-color: black; */
     width: 40%;
     height: 600px;
-    /* position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.4);
@@ -889,17 +886,19 @@ padding-left: 9px;
     }
 
     .texto-hero h1{
-        font-size: 25px;
+        font-size: 24px;
         }
 
     .texto-hero h2{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .texto-hero p{
-        font-size: 0.7em;
+        font-size: 0.8em;
         margin-top: 10px;
         font-weight: 300;
+        padding-inline: 5%;
+        width: 90%;
     }
 
     .hero {
@@ -946,30 +945,16 @@ padding-left: 9px;
     /* Seccion 2 Tours */
 
     @media screen and (max-width: 858px){
-        #tours1{
+    #tours1{
         justify-content: flex-start;
         text-align: center;
      }
 
-        .tour-titulo h2{
+    .tour-titulo h2{
         font-size: 30px;
         }
 
-        .texto-inicio{
-            width: 90%;
-        }
-
-        .texto-inicio h2{
-            font-size: 26px;
-            padding-inline: 30px;
-        }
-
-        .texto-inicio p{
-            font-size: 0.8em;
-            margin-bottom: 10px;
-        }
-
-        .tour {
+    .tour {
         flex-direction: column-reverse;
         height: auto;
         text-align: center;
@@ -980,10 +965,10 @@ padding-left: 9px;
         padding-bottom: 0;
      }
 
-        .contenedor-textos-tour{
-          height: auto;
+    .contenedor-textos-tour{
+         height: auto;
          width: 90%;
-         padding-top: 20px;
+         padding-block: 20px;
     }
 
     .tour h2{
@@ -1187,16 +1172,22 @@ padding-left: 9px;
         font-size: .6em;
         }
 
+        .footer-texto{
+        width: 100%;
+        }
+
         .contenedor-footer{
-         display: block;
-         width: 90%;
-         gap: 15px;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: left;
+        align-items: left ;
         }
 
         .contenedor-footer div{
         padding: 0;
         border-left: none;
         padding-top: 5px;
+        justify-content: left;
         }
 
         .link2{
@@ -1219,7 +1210,11 @@ padding-left: 9px;
     .subinicio-textos{
         width: 100%;
     }
+    }
 
+/* Seccion 2 */
+
+    @media screen and (max-width: 858px){
     .circuitos{
         flex-direction: column;
         width: 100%;
@@ -1228,8 +1223,6 @@ padding-left: 9px;
     .circuitos-textos{
         width: 100%;
     }
-
-
 
     .circuitos h2{
         display: block; 
@@ -1240,4 +1233,9 @@ padding-left: 9px;
     .circuitos dl{
         margin-top: 20px;
     }
-}
+
+    .contenedor-slide{
+        width: 80%;
+        height: auto;
+    }
+    }
