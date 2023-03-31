@@ -807,7 +807,7 @@ padding-left: 9px;
 
 
 .contenedor-slide{
-    width: 30%;
+    width: 400px;
     height: 500px;
     overflow: hidden;
     border-radius: 10px;
@@ -815,8 +815,8 @@ padding-left: 9px;
 }
 
 .wrapper{
-    width: 100%;
-    height: fit-content;
+    width: 400px;
+    height: 500px;
     display: flex;
     animation: slide 10s infinite;
 }
@@ -832,8 +832,8 @@ padding-left: 9px;
     100% {transform: translateX(0);}
 }
 .wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 600px;
 }
 
 
