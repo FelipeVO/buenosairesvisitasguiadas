@@ -779,11 +779,11 @@ padding-left: 9px;
     transition: all .3s;
 }
 
-.circuitos .nav_link:hover{
+/* .circuitos .nav_link:hover{
     color: white;
     background-color: var(--color2);
     border: 1px solid var(--color2);
-}
+} */
 
 .circuitos dt{
     font-size: 1.1em;
@@ -805,10 +805,38 @@ padding-left: 9px;
 }
 
 .contenedor-slide{
-    background-color: black;
-    width: 30%;
-    height: 700px;
+    /* background-color: black; */
+    width: 40%;
+    height: 600px;
+    /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0% {transform: translateX(0);}
+    25% {transform: translateX(0);}
+    30% {transform: translateX(-100%);}
+    50% {transform: translateX(-100%);}
+    55% {transform: translateX(-200%);} 
+    75% {transform: translateX(-200%);} 
+    80% {transform: translateX(-300%);}
+    90% {transform: translateX(-300%);}
+    100% {transform: translateX(0);}
+}
+.wrapper img{
+    width: 100%;
+}
+
 
 /* Celular */
 
