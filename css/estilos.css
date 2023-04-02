@@ -806,7 +806,7 @@ padding-left: 9px;
 }
 
 
-.contenedor-slide{
+/* .contenedor-slide{
     width: 400px;
     height: 500px;
     overflow: hidden;
@@ -834,8 +834,74 @@ padding-left: 9px;
 .wrapper img{
     width: 400px;
     height: 600px;
-}
+} */
 
+
+  .slider {
+    width: 450px;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .slider img {
+    gap: 0;
+    height: 700px;
+    width: 450px;
+    scroll-snap-align: center;
+    display: block; 
+    margin: 0;
+    float: none;
+    white-space: nowrap;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    padding: 0;
+    transform: translateX(-100%);
+  }
+  
+  .slider img:first-child {
+    transform: translateX(0);
+  }
+  
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    16.666% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    41.666% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    66.666% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    91.666% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  
+  .slider img {
+    animation-name: slider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
 
 /* Celular */
 
@@ -1236,7 +1302,7 @@ padding-left: 9px;
         margin-top: 20px;
     }
 
-    .contenedor-slide{
+    .slider{
         width: 80%;
         height: auto;
     }
