@@ -185,6 +185,7 @@ ul.show {
     width: 100%;
     font-size: 1.3em ;
     text-align: justify;
+    padding-bottom: 5px;
     padding-inline: 15%;
     font-weight: bold;
 }
@@ -199,7 +200,7 @@ ul.show {
     font-weight: bold;
     background-color: var(--color1);
     transition: .3s ease;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .texto-hero a:hover{
@@ -214,6 +215,9 @@ ul.show {
     width: 100%;
 }
 
+.hero span{
+    display: block;
+}
 /* Seccion 2 Tours Principales */
 
 #tours1{
@@ -958,15 +962,14 @@ padding-left: 9px;
         }
 
     .texto-hero h2{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .texto-hero p{
         font-size: 0.8em;
-        margin-top: 10px;
         font-weight: 300;
-        padding-inline: 5%;
-        width: 90%;
+        margin: 0;
+        width: 100%;
     }
 
     .hero {
@@ -1303,7 +1306,12 @@ padding-left: 9px;
     }
 
     .slider{
-        width: 80%;
-        height: auto;
+        width: 350px;
+        height: 500px;
+    }
+
+    .slider img {
+        height: 500px;
+        width: 350px;
     }
     }
