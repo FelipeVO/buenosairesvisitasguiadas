@@ -775,20 +775,19 @@ padding-left: 9px;
 }
 
 .circuitos .nav_link{
+    font-size: 20px;
     margin-left: 20px;
-    background-color: transparent;
-    border: 1px solid orangered;
-    color: orangered;
-    border-radius: 7px;
+    /* border: 1px solid;  */
+    text-decoration: underline;
+    color: black;
+    border-radius: 7px; 
     padding: 10px;
     transition: all .3s;
 }
 
-/* .circuitos .nav_link:hover{
-    color: white;
-    background-color: var(--color2);
-    border: 1px solid var(--color2);
-} */
+.circuitos .nav_link:hover{
+    font-size: 22px;
+} 
 
 .circuitos dt{
     font-size: 1.1em;
