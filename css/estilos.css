@@ -91,7 +91,7 @@ header{
 }
 
 .nav_logo img{
-    width: 50px;
+    width: 70px;
 }
 
 .nav_logo p{
@@ -285,6 +285,7 @@ ul.show {
     text-align: justify;
     border-left: 2px solid;
     padding-left: 15px; 
+    padding-bottom: 5px;
 }
 
 .tour br, .texto-inicio br{
@@ -324,7 +325,17 @@ ul.show {
 
 .imagen-boton{
     width: 50px;
-    transform: translatey(7px);
+    translate: -150px 10px;
+    animation: movimiento 9s ease infinite;
+    transform: scaleX(-1); 
+}
+
+    @keyframes movimiento {
+        0%  {transform: translateX(0) scaleX(-1);}
+        30%  {transform: translateX(300px) scaleX(-1);}
+        50% {transform: translateX(300px)}
+        90%  {transform: translateX(0);}
+        100% {transform: scaleX (-1);}
 }
 
 .tours1 a{
@@ -907,6 +918,10 @@ padding-left: 9px;
     animation-iteration-count: infinite;
   }
 
+  .not_b h2::before{
+    content: "";
+  }
+
 /* Celular */
 
     /* Navbar */
@@ -959,6 +974,7 @@ padding-left: 9px;
 
     .texto-hero h1{
         font-size: 24px;
+        font-weight: bold;
         }
 
     .texto-hero h2{
