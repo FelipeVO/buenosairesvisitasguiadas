@@ -978,12 +978,13 @@ padding-left: 9px;
     }
 
     .texto-hero h1{
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         }
 
     .texto-hero h2{
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 0px
     }
 
     .texto-hero p{
@@ -1340,7 +1341,7 @@ padding-left: 9px;
     }
 
     .slider img {
-        height: 500px;
         width: 350px;
+        height: 500px;
     }
     }
