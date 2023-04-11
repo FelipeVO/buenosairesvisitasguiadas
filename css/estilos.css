@@ -605,7 +605,7 @@ form{
 }
 
 .contacto h2{
-    font-size: 3em;
+    font-size: 2.8em;
     border-bottom: 1px solid;
     
 }
@@ -619,16 +619,18 @@ form{
 }
 
 .contacto-texto h3{
-    margin-bottom: 30px;
+    margin-top: 10px;
     font-size: 1.2em;
     font-weight: 100;
-    text-align: justify;
-    direction: rtl;
+    text-align: right;
+}
+
+.contacto-texto ul{
+    margin-top: 10px;
 }
 
 .contacto-texto li{
     text-align: right;
-
     color: var(--color1);
 }
 
@@ -1233,7 +1235,6 @@ padding-left: 9px;
             font-size: 1.3em;
             align-self: center;
             text-align: justify;
-            margin-bottom: 20px;
             padding-inline: 20px;
         }
 
@@ -1243,8 +1244,7 @@ padding-left: 9px;
 
         .contacto-texto h3{
             font-size: .8em;
-            direction: ltr;
-            margin-bottom: 5px;
+            text-align: left;
         }
 
         .contacto-texto li{
