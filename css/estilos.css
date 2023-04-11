@@ -935,6 +935,7 @@ padding-left: 9px;
   .gallery .image{
     padding: 7px;
     width: calc(100% / 3);
+    cursor: pointer;
   }
   .gallery .image span{
     display: flex;
@@ -1198,11 +1199,14 @@ padding-left: 9px;
     .tour h2{
         font-size: 24px;
         font-weight: bold;
+        padding-bottom: 5px;
     }
 
     .tour h3, .tour p {
         font-size: 0.8em;
         text-align: justify;
+        padding-bottom: 0;
+        /* padding-block: 5px; */
     }
 
     .tour p::before{

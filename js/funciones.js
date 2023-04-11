@@ -85,7 +85,7 @@ const gallery  = document.querySelectorAll(".image"),
 previewBox = document.querySelector(".preview-box"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
-closeIcon2 = previewBox.querySelector(".shadow"),
+closeIcon2 = document.querySelector(".shadow"),
 currentImg = previewBox.querySelector(".current-img"),
 totalImg = previewBox.querySelector(".total-img"),
 shadow = document.querySelector(".shadow");
@@ -154,6 +154,7 @@ window.onload = ()=>{
                 shadow.style.display = "none";
                 document.querySelector("body").style.overflow = "scroll";
             }
+            
         }
         
     } 
