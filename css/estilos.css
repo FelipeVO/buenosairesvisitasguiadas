@@ -82,7 +82,7 @@ a {
 }
 
 .nav_logo{
-    width: 40%;
+    width: 50%;
     padding-left: 2%;
     display: flex;
     flex-direction: row;
@@ -99,7 +99,6 @@ a {
     font-weight: bold;
     width: 130px;
 }
-
 
 .nav_logo a{
     color: black    ;
@@ -955,19 +954,23 @@ padding-left: 9px;
 }
 
 .circuitos-textos div{
-    width: 33%;
+    width: calc(75%/2);
 }
 
 .circuitos-titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 25%;
+    text-align: center;
 }
 
 .circuitos h2{
     font-size: 2em;
-    display: inline;
+    display: block;
     padding: 0;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -996,6 +999,7 @@ padding-left: 9px;
     padding-left: 45px;
     background-size: contain; 
     z-index: 200;
+    color: var(--color2);
 
 }
 
@@ -1004,6 +1008,7 @@ padding-left: 9px;
     /* border-left: 1px solid black; */
     padding-left: 45px;
     padding-right: 20px;
+    font-size: 1em;
 }
 
 .circuitos li{
@@ -1121,7 +1126,7 @@ padding-left: 9px;
     /* Navbar */
     @media screen and (max-width: 952px) {
         .nav_logo{
-            width: 70%;
+            width: 80%;
             font-size: 90%;
         }
         .nav_menu li a{
@@ -1565,6 +1570,11 @@ padding-left: 9px;
     .circuitos-textos div{
     padding: 5px;
     width: 100%;
+    }
+
+    .circuitos-titulo{
+        max-width: 100%;
+
     }
 
     .circuitos-titulo br{
