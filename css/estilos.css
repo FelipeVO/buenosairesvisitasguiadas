@@ -76,8 +76,7 @@ a {
     justify-content: space-between;
     border-bottom: 1px solid whitesmoke;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -101,17 +100,9 @@ a {
     width: 130px;
 }
 
-.pre{
- display: flex;
- align-items: center;
- padding-left: 5%;
- gap: 10px;
- height: 5vh;
- background-color: black;
-}
 
-.pre a{
-    color: white    ;
+.nav_logo a{
+    color: black    ;
     font-size: 14px;
 }
 
@@ -196,7 +187,7 @@ ul.show {
     width: 100%;
     font-size: 1.3em ;
     text-align: justify;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-inline: 15%;
     font-weight: bold;
 }
@@ -266,7 +257,7 @@ ul.show {
 .tour{
     height: auto;
     width: 100%;
-    padding-left: 5%;
+    padding-inline: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -295,7 +286,7 @@ ul.show {
     font-size: 1.2em ;
     position: relative;
     text-align: justify;
-    border-left: 2px solid;
+    border-left: 2px solid; 
     padding-left: 15px; 
     padding-block: 5px;
 }
@@ -309,8 +300,8 @@ ul.show {
 .derecha{
     text-align: right;
     width: 100%;
-    padding-right: 5%;
-    padding-left: 0;
+    /* padding-right: 5%;
+    padding-left: 0; */
 }
 
 .derecha h3{
@@ -318,7 +309,7 @@ ul.show {
 }
 
 .derecha p{
-    border-right: 2px solid;
+    border-right: 2px solid; 
     padding-right: 15px; 
     border-left: 0;
     padding-left: 0;
@@ -327,13 +318,8 @@ ul.show {
 .tour img{
     width: 40%;
     height: 35%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
-
-.derecha img{
-    border-radius: 0px 10px 10px 0;
-}
-
 
 .imagen-boton{
     width: 50px;
@@ -1121,12 +1107,12 @@ padding-left: 9px;
       width: calc(100% / 2);
     }
   }
-  @media(max-width: 600px){
+  /* @media(max-width: 600px){
     .gallery .image{
       width: 100%;
       padding: 4px;
     }
-  }
+  } */
 
   .not_b h2::before{
     content: "";
@@ -1279,18 +1265,24 @@ padding-left: 9px;
          height: auto;
          width: 90%;
          padding-block: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
     }
 
     .tour h2{
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 5px;
+        text-align: center;
     }
 
     .tour h3, .tour p {
         font-size: 0.8em;
         text-align: justify;
-        padding-bottom: 0;
+        padding: 0;
+        padding-left: 7px;
         /* padding-block: 5px; */
     }
 
@@ -1302,6 +1294,12 @@ padding-left: 9px;
         flex-direction: column;
     }
 
+    .derecha p{
+        border-right: 0; 
+        padding-right: 0;
+        border-left: 2px solid; 
+        padding-left: 7px; 
+    }
 
     .tour img{
         height: 200px;
@@ -1531,6 +1529,20 @@ padding-left: 9px;
     }
     }
 
+
+/* Seccion 1.5 */ 
+
+    @media screen and (max-width: 858px){
+    
+    .circuitos-short{
+    flex-direction: column;
+    }
+
+    .circuitos-short div{
+    width: 100vw;
+    }
+    }
+
 /* Seccion 2 */
 
     @media screen and (max-width: 858px){
@@ -1541,11 +1553,15 @@ padding-left: 9px;
 
     .circuitos-textos{
         width: 100%;
+        flex-direction: column;
+    }
+
+    .circuitos-textos div{
+    width: 100%;
     }
 
     .circuitos h2{
         display: block; 
-        margin-bottom: 20px;
     }
     
 
