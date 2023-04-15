@@ -1549,6 +1549,7 @@ padding-left: 9px;
     .circuitos{
         flex-direction: column;
         width: 100%;
+        margin-block: 25px;
     }
 
     .circuitos-textos{
@@ -1564,13 +1565,21 @@ padding-left: 9px;
     width: 100%;
     }
 
+    .circuitos-titulo br{
+        display: none;
+    }
+
     .circuitos h2{
         display: block; 
+        padding: 0;
     }
     
+    .circuitos a{
+        margin-bottom: 5px;
+    }
 
     .circuitos dl{
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .slider{
