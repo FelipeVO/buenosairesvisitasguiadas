@@ -1554,9 +1554,13 @@ padding-left: 9px;
     .circuitos-textos{
         width: 100%;
         flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .circuitos-textos div{
+    padding: 5px;
     width: 100%;
     }
 
