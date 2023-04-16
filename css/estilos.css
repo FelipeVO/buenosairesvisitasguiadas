@@ -796,6 +796,7 @@ padding-left: 9px;
     background-color: hsl(44, 77%, 62%);
 }
 
+
 #c2:hover{
     background-color: hsl(44, 72%, 44%);
 }
@@ -1018,6 +1019,17 @@ padding-left: 9px;
     
 }
 
+.ch1{
+    border-bottom: 2px solid hsl(44, 77%, 62%);
+}
+
+.ch2{
+    border-bottom: 2px solid hsl(140, 62%, 42%);
+}
+
+.ch3{
+    border-bottom: 2px solid var(--color1);
+}
 
 /* .contenedor-slide{
     width: 400px;
