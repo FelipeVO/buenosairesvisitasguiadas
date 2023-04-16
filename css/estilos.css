@@ -167,26 +167,28 @@ ul.show {
     justify-content: space-evenly;
     align-items: top;
     width: 100%;
+    /* margin-inline: 50px; */
 }
 
 .hero-letras{
-    width: 60%;
+    width: 50%;
 }
 
 .hero-letras div{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .texto-hero h2{
     margin-top: 30px;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.4em;
+    font-weight: bolder;
+    /* text-align: justify; */
 }
 
 
 .texto-inicio p{
     width: 100%;
-    font-size: 1.4em ;
+    font-size: 1.2em ;
     text-align: justify;
 }
 
@@ -203,7 +205,7 @@ ul.show {
 }
 
 .texto-hero a:hover{
-    background-color: var(--color2);
+    background-color: linear-gradient(var(--color1), var(--color2));
     border: 1px solid var(--color2);
 }
 
