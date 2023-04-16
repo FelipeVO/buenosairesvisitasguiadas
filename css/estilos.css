@@ -765,13 +765,14 @@ padding-left: 9px;
 
 .circuitos-short{
     display: flex;
-
+    gap: 2%;
+    background-color: rgb(252, 249, 249);
 
 }
 
 .circuitos-short div{
     width: 25%;
-    height: 150px;
+    height: 120px;
     text-align: center  ;
     transition: all .3s ease;
     display: flex;
@@ -780,6 +781,7 @@ padding-left: 9px;
     font-size: 1.8em;
     font-weight: bold;
     color: white;
+    border-radius: 100px ;
 }
 
 .circuitos-short div a{
@@ -1555,11 +1557,14 @@ padding-left: 9px;
     
     .circuitos-short{
     flex-direction: column;
+    gap: 0;
     }
 
     .circuitos-short div{
     width: 100vw;
+    border-radius: 0 ;
     }
+
     }
 
 /* Seccion 2 */
