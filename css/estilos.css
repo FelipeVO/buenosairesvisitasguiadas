@@ -782,16 +782,20 @@ padding-left: 9px;
     font-weight: bold;
     color: white;
     border-radius: 100px ;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .circuitos-short div a{
     color: white;
+    padding-inline: 90px;
+    padding-block: 40px;
 }
 
 #c1{
    color: black;
    font-size: 1.3em;
    background-color: rgb(252, 249, 249);
+   box-shadow: none;
 }
 
 #c2{
@@ -1021,16 +1025,28 @@ padding-left: 9px;
     
 }
 
-.ch1{
-    border-bottom: 2px solid hsl(44, 77%, 62%);
+.ch1::before{
+    color: hsl(44, 77%, 62%);
+    content: "•"; 
+    display: inline-block; 
+    width: 30px;
+    margin-left: -1em
 }
 
-.ch2{
-    border-bottom: 2px solid hsl(140, 62%, 42%);
+.ch2::before{
+    color: hsl(140, 62%, 42%);
+    content: "•"; 
+    display: inline-block; 
+    width: 30px;
+    margin-left: -1em
 }
 
-.ch3{
-    border-bottom: 2px solid var(--color1);
+.ch3::before{
+    color: var(--color1);
+    content: "•"; 
+    display: inline-block; 
+    width: 30px;
+    margin-left: -1em
 }
 
 /* .contenedor-slide{
@@ -1565,6 +1581,9 @@ padding-left: 9px;
     border-radius: 0 ;
     }
 
+    .circuitos-short div a{
+    padding-inline: 100vw;
+    }
     }
 
 /* Seccion 2 */
