@@ -97,6 +97,7 @@ a {
     padding-left: 2%;
     color: black;
     font-weight: bold;
+    font-size: 1.2em;
     width: 190px;
 }
 
@@ -159,18 +160,18 @@ ul.show {
     font-weight: bolder;
     margin-top: 110px;
     margin-bottom: 30px;
-    margin-left: 50px;
+    margin-left: 10vw;
 }
 
 .texto-hero{
     color: black;
-    height: 550px;
+    height: 750px;
     display: flex;
     /* justify-content: space-evenly; */
     align-items: top;
-    width: 100%;
-    gap: 70px;
-    margin-inline: 50px;
+    width: 90%;
+    gap: 6%;
+    margin-inline: 10vw;
 }
 
 .hero-letras{
@@ -185,6 +186,7 @@ ul.show {
     margin-top: 30px;
     font-size: 2.2em;
     font-weight: bold;
+    padding-bottom: 20px;
     /* text-align: justify; */
 }
 
@@ -194,6 +196,7 @@ ul.show {
     font-size: 1.2em ;
     text-align: justify;
 }
+
 
 .texto-hero a{
     display: inline-block;
@@ -825,9 +828,11 @@ padding-left: 9px;
 
 #c1{
    color: black;
-   font-size: 1.3em;
+   font-weight: bold;
+   font-size: 1.8em;
    background-color: rgb(252, 249, 249);
    box-shadow: none;
+   padding-left: 3%;
 }
 
 #c2{
