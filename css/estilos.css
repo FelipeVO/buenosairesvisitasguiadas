@@ -1240,6 +1240,7 @@ padding-left: 9px;
         
         .nav_logo p{
             width: 50%;
+            font-size: 1em;
         }
 
         .nav_logo a{
@@ -1286,13 +1287,14 @@ padding-left: 9px;
 
     .texto-hero h2{
         font-size: 16px;
-        margin-bottom: 0px
+        margin-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .texto-hero p{
         font-size: 0.8em;
         font-weight: 300;
-        margin: 0;
+        /* margin: 0; */
         width: 100%;
     }
 
