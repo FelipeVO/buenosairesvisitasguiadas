@@ -1600,12 +1600,13 @@ padding-left: 9px;
     
     .circuitos-short{
     flex-direction: column;
-    gap: 0;
+    /* gap: 0; */
     }
 
     .circuitos-short div{
     width: 100vw;
-    border-radius: 0 ;
+    margin-top: 10px;
+    /* border-radius: 0 ; */
     }
 
     .circuitos-short div a{
