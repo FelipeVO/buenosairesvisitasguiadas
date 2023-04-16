@@ -205,7 +205,7 @@ ul.show {
     font-weight: bold;
     background-color: var(--color1);
     transition: .3s ease;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .texto-hero a:hover{
