@@ -1375,8 +1375,7 @@ padding-left: 9px;
 
     .tour img{
         height: 200px;
-        width: 100vw;
-        border-radius: 0;
+        width: 85vw;
         padding: none;
     }
 
@@ -1608,6 +1607,7 @@ padding-left: 9px;
     
     .circuitos-short{
     flex-direction: column;
+    padding-bottom: 10px;
     /* gap: 0; */
     }
 
@@ -1628,7 +1628,7 @@ padding-left: 9px;
     .circuitos{
         flex-direction: column;
         width: 100%;
-        margin-block: 25px;
+        margin-bottom: 30px;
     }
 
     .circuitos-textos{
