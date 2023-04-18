@@ -1612,19 +1612,24 @@ padding-left: 9px;
     }
 
     .circuitos-short div{
-    width: 100vw;
+    width: 100%;
     margin-top: 10px;
     /* border-radius: 0 ; */
     }
 
     .circuitos-short div a{
-    padding-inline: 100vw;
+    padding-inline: 100px;
     }
     }
 
 /* Seccion 2 */
 
     @media screen and (max-width: 858px){
+
+    .wrapper{
+    padding-bottom: 0;
+    }
+
     .circuitos{
         flex-direction: column;
         width: 100%;
@@ -1670,5 +1675,9 @@ padding-left: 9px;
     .slider img {
         width: 350px;
         height: 500px;
+    }
+
+    .wrapper .svg-hero-bottom{
+        display: none;
     }
     }
